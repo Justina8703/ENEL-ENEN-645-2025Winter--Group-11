@@ -18,5 +18,8 @@ Torchvision for MobileNetV2
 We use MobileNetV2 as the image feature extractor. Pre-trained weights from ImageNet are used, and the classifier is removed to obtain a 1280-dimensional feature vector, which is then passed through a fully connected layer and reduced to 750 dimensions before fusion with text features.  
 ### DistilBERT Text Encoder
 We use DistilBERT, a lightweight version of BERT, to process the textual descriptions extracted from image filenames. The text is tokenized, and the [CLS] token embedding (768 dimensions) is extracted. This embedding is then passed through a fully connected layer, reducing it to 750 dimensions, followed by batch normalization.  
+### Classifier
+The 750-dimensional image and text features are concatenated (1500 dimensions total).  
+The fused representation passes through a fully connected classifier (1500 → 1000 → num_classes), with ReLU activation and dropout to improve generalization.
 
 
