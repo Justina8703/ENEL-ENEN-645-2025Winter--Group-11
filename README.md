@@ -23,8 +23,8 @@ We use DistilBERT, a lightweight version of BERT, to process the textual descrip
 The 750-dimensional image and text features are concatenated (1500 dimensions total).  
 The fused representation passes through a fully connected classifier (1500 → 1000 → num_classes), with ReLU activation and dropout to improve generalization.
 ## Hyperparameters  
-Learning rate: 2e-5
-Batch size: 64 
+Learning rate: 2e-5  
+Batch size: 64   
 Number of epochs: 10
 ## Results and Discussions  
 ### Model Performance  
