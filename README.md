@@ -12,4 +12,10 @@ Evaluation and Prediction
 PyTorch for model training  
 Transformers for text encoding using DistilBERT  
 Torchvision for MobileNetV2  
+## Model Architecture  
+### MobileNetV2 Feature Extraction  
+We use MobileNetV2 as the image feature extractor. Pre-trained weights from ImageNet are used, and the classifier is removed to obtain a 1280-dimensional feature vector, which is then passed through a fully connected layer and reduced to 750 dimensions before fusion with text features.  
+### DistilBERT Text Encoder
+We use DistilBERT, a lightweight version of BERT, to process the textual descriptions extracted from image filenames. The text is tokenized, and the [CLS] token embedding (768 dimensions) is extracted. This embedding is then passed through a fully connected layer, reducing it to 750 dimensions, followed by batch normalization.  
+
 
