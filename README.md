@@ -39,6 +39,10 @@ Number of epochs: 10
 | **Accuracy**  | -        | -      | 0.83     | 3432    |
 | **Macro Avg** | 0.83     | 0.82   | 0.82     | 3432    |
 | **Weighted Avg** | 0.83   | 0.83   | 0.83     | 3432    |
+The classification results demonstrate consistent performance across all classes, with good accuracy, precision, recall, and F1-scores. The model achieves an overall accuracy of 83%, indicating its effectiveness in distinguishing different categories.  
+Among the classes, the "Green" category stands out with a high recall (0.94) and F1-score (0.92), suggesting that the model is particularly effective in identifying this class. The "Blue" category also performs well, achieving a recall of 0.88 and an F1-score of 0.84, highlighting its robustness in detecting this type.  
+On the other hand, the "Black" category has a lower recall (0.66) and F1-score (0.71), indicating that some samples may be misclassified. Despite this, its precision (0.76) remains reasonable, suggesting potential areas for improvement, such as data augmentation or adjusting class weights.  
+Overall, the model exhibits balanced performance across all categories, with macro and weighted averages around 0.83, making it a reliable approach for classification. Future improvements may focus on enhancing the recall of the lower-performing classes to achieve even better results.
 
 
 
