@@ -26,15 +26,13 @@ Learning rate: 2e-5
 Batch size: 64 
 Number of epochs: 10
 ## Results and Discussions  
-## Model Performance  
-
+### Model Performance  
 | **Class**   |**Precision**|**Recall**|**F1-Score**|**Support**|
 |-------------|-----------|--------|----------|---------|
 | **Black**   | 0.76      | 0.66   | 0.71     | 695     |
 | **Blue**    | 0.81      | 0.88   | 0.84     | 1086    |
 | **Green**   | 0.90      | 0.94   | 0.92     | 799     |
 | **TTR**     | 0.84      | 0.81   | 0.83     | 852     |
-
 ### **Overall Performance**  
 | Metric        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
